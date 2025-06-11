@@ -20,6 +20,7 @@ public class _07_Main {
 		
 		memberHashMap.removeMember(1004);
 		memberHashMap.showAllMember();
+		
 	}
 	
 }

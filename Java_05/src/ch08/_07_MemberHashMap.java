@@ -6,7 +6,7 @@ import java.util.Iterator;
 //p458
 public class _07_MemberHashMap {
 
-	private HashMap<Integer, _07_Member> hashMap;
+	private HashMap<Integer, _07_Member> hashMap;	// null
 	
 	public _07_MemberHashMap() {
 		hashMap = new HashMap<Integer,_07_Member>();
