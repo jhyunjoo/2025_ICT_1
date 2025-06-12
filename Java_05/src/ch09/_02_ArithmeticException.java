@@ -32,19 +32,24 @@ public class _02_ArithmeticException {
 		// Scanner 생성
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("첫번째 값 입력 : ");
-		int num1 = sc.nextInt();
-		System.out.print("두번째 값 입력 : ");
-		int num2 = sc.nextInt();
-		
 		try { 
 			// 예외가 발생할 수 있는 코드 부분 => 0으로 나눌 때
+			System.out.print("첫번째 값 입력 : ");
+			int num1 = sc.nextInt();
+			System.out.print("두번째 값 입력 : ");
+			int num2 = sc.nextInt();
+			
 			System.out.println("몫 : " + (num1 / num2));
 			System.out.println("나머지 : " + (num1 % num2));
 		} catch(ArithmeticException e) {
 			// try 블록안에서 예외가 발생했을 때 예외를 처리하는 부분
 			System.out.println("=== 예외 처리 부분 ===");
 			System.out.println("예외 처리 메시지 : " + e.getMessage());
+			e.printStackTrace();	// 에러메시지 출력 : 에러가 발생했을 때 어떤 오류가 나는지 확인
+			/*
+			 * java.lang.ArithmeticException: / by zero
+					at ch09._02_ArithmeticException.main(_02_ArithmeticException.java:42)
+			 */
 		} finally {
 			// 항상 수행되는 부분(예외가 발생하지 않더라도) 
 			// 주로 자원해제를 위한 close() 문장이 온다.

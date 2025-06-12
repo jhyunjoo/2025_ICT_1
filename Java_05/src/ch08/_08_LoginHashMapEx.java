@@ -43,6 +43,7 @@ public class _08_LoginHashMapEx {
 			String id = sc.next();
 			if (id.equalsIgnoreCase("Q")) {
 				System.out.println("프로그램 종료");
+				sc.close();
 				System.exit(0);
 			}
 			System.out.print("비밀번호 입력 : ");
