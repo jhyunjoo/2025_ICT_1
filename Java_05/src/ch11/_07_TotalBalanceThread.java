@@ -20,7 +20,7 @@ public class _07_TotalBalanceThread extends Thread {
 		for(int cnt = 0; cnt < 3; cnt++) {
 			int sum = sharedArea.getBalanceTotal();
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
